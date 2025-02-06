@@ -1,5 +1,5 @@
-$variable1 = $env:ursSiteID
-$variable2 = $env:siteID
+$variable1 = $env:ursSiteID # Script Variable
+$variable2 = $env:siteID # Site Variable
 
 $siteID = if ([string]::IsNullOrEmpty($variable1)) { 
     $variable2 
