@@ -1,12 +1,4 @@
-$variable1 = $env:ursSiteID # Script Variable
-$variable2 = $env:siteID # Site Variable
-
-$siteID = if ([string]::IsNullOrEmpty($variable1)) { 
-    $variable2 
-} else { 
-    $variable1 
-}
-
+$siteID = "YOUR_SITE_ID"
 $url = "https://merlot.centrastage.net/csm/profile/downloadAgent/$siteID"
 
 Write-Host "$url"
